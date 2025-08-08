@@ -1,0 +1,41 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>실습</h1>
+	
+   <form action="forward" method="get">
+      <label for="name">이름 : </label>
+      <input type="text" id="name" name="userName" placeholder="이름 입력"></br>
+      <button type="submit">GET 요청</button>
+   </form>
+   
+   <form action="forward" method="get">
+      <label for="age">나이 : </label>
+      <input type="text" id="age" name="userAge" placeholder="나이 입력"></br>
+      <button type="submit">GET 요청</button>
+   </form>
+   
+   
+   
+   <h1>forward / redirect 예제</h1>
+   <form action="forwardHandler" method="post">
+   	<label for="forwardName">Forward 이름 : </label>
+   	<input type="text" id="forwardName" name="forwardName"><br>
+   	<button type="submit">Forward 요청</button>
+   </form>
+   
+   <form action="redirectHandler" method="post">
+   	<label for="RedirectName">Redirect 이름 : </label>
+   	<input type="text" id="RedirectName" name="RedirectName"><br>
+   	<button type="submit">Forward 요청</button>
+   </form>
+
+
+</body>
+</html>
